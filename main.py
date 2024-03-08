@@ -23,15 +23,15 @@ wid = 60
 heg = 60
 mjp = 10
 touchable = True
-walk_right = [pygame.image.load("pyg/wl1.png"), pygame.image.load("pyg/wl2.png"), pygame.image.load("pyg/wl3.png"),
-              pygame.image.load("pyg/pixilart-drawing.png")]
-walk_left = [pygame.image.load("pyg/wr1.png"), pygame.image.load("pyg/wr2.png"), pygame.image.load("pyg/wr3.png"),
-             pygame.image.load("pyg/pixilart-drawing (1).png")]
+walk_right = [pygame.image.load("wl1.png"), pygame.image.load("wl2.png"), pygame.image.load("wl3.png"),
+              pygame.image.load("pixilart-drawing.png")]
+walk_left = [pygame.image.load("wr1.png"), pygame.image.load("wr2.png"), pygame.image.load("wr3.png"),
+             pygame.image.load("pixilart-drawing (1).png")]
 
 #_ enemy vars
 x1 = 100
 yy = 575
-en_pic = pygame.image.load("pyg/enemy.png")
+en_pic = pygame.image.load("enemy.png")
 
 #_ trident vars
 tran = 1
@@ -41,7 +41,6 @@ tx = 1000
 ty = -300
 tttime = 500
 tt = True
-
 
 #_ golden bullet vars
 xl = 0
@@ -63,8 +62,8 @@ foodx = round(random.randrange(0, 1000 - snake_block) / 10.0) * 10.0
 foody = round(random.randrange(0, 750 - snake_block) / 10.0) * 10.0
 
 #_ wind vars
-wind_pict = pygame.image.load("pyg/windie.png")
-wind_pict_2 = pygame.image.load("pyg/windie2.png")
+wind_pict = pygame.image.load("windie.png")
+wind_pict_2 = pygame.image.load("windie2.png")
 wind_ran = -10
 wind_x = 1000
 wind_y = 300
@@ -93,27 +92,27 @@ fire = False
 fire_hitbox = (ran, fy, 75, 75)
 
 #_ storm vars
-windd = pygame.mixer.Sound("pyg/wind_boss.mp3")
-storm_pic = pygame.image.load("pyg/strom.png")
+windd = pygame.mixer.Sound("wind_boss.mp3")
+storm_pic = pygame.image.load("strom.png")
 storm_x = 1000
 ww = False
 s = 0
 
 #_ lighting vars
 zap_ran = 1
-lig1 = pygame.image.load("pyg/lighting1.png")
-lig2 = pygame.image.load("pyg/lighting2.png")
-lig3 = pygame.image.load("pyg/lighting3.png")
-lig4 = pygame.image.load("pyg/lighting4.png")
-lig5 = pygame.image.load("pyg/lighting5.png")
-lig6 = pygame.image.load("pyg/lighting6.png")
-lig7 = pygame.image.load("pyg/lighting7.png")
-lig8 = pygame.image.load("pyg/lighting8.png")
-lig9 = pygame.image.load("pyg/lighting9.png")
-lig10 = pygame.image.load("pyg/lighting10.png")
-lig_em = pygame.image.load("pyg/lighting_empty.png")
-warnings = [pygame.image.load("pyg/warning_1.png"), pygame.image.load("pyg/warning_2.png"),
-            pygame.image.load("pyg/warning_3.png")]
+lig1 = pygame.image.load("lighting1.png")
+lig2 = pygame.image.load("lighting2.png")
+lig3 = pygame.image.load("lighting3.png")
+lig4 = pygame.image.load("lighting4.png")
+lig5 = pygame.image.load("lighting5.png")
+lig6 = pygame.image.load("lighting6.png")
+lig7 = pygame.image.load("lighting7.png")
+lig8 = pygame.image.load("lighting8.png")
+lig9 = pygame.image.load("lighting9.png")
+lig10 = pygame.image.load("lighting10.png")
+lig_em = pygame.image.load("lighting_empty.png")
+warnings = [pygame.image.load("warning_1.png"), pygame.image.load("warning_2.png"),
+            pygame.image.load("warning_3.png")]
 zap = False
 zap_hitbox = (-250, -250, 100, 580)
 zapzap = False
@@ -134,9 +133,9 @@ lt = True
 #_ boss vars
 boss = False
 boss_2 = False
-la = [pygame.image.load("pyg/l1.png"), pygame.image.load("pyg/l2.png"), pygame.image.load("pyg/l3.png"),
-      pygame.image.load("pyg/l4.png"), pygame.image.load("pyg/l5.png")]
-laugher = pygame.mixer.Sound("pyg/00002a5b.mp3")
+la = [pygame.image.load("l1.png"), pygame.image.load("l2.png"), pygame.image.load("l3.png"),
+      pygame.image.load("l4.png"), pygame.image.load("l5.png")]
+laugher = pygame.mixer.Sound("00002a5b.mp3")
 bx = -1500
 bhp = 150
 bhitbox = (bx, -200, 1000, 1000)
@@ -145,22 +144,22 @@ boss_3 = False
 boss_4 = False
 
 #_ setting vars
-bg = pygame.image.load("pyg/bg1.png")
+bg = pygame.image.load("bg1.png")
 
-bs = pygame.mixer.Sound("pyg/bullet.mp3")
-dd = pygame.mixer.Sound("pyg/hit.mp3")
-conv = pygame.mixer.Sound("pyg/just-sans-talking.mp3")
-ll = [pygame.mixer.Sound("pyg/just-sans-talking.mp3"), pygame.mixer.Sound("pyg/just-sans-talking.mp3"),
-      pygame.mixer.Sound("pyg/just-sans-talking.mp3"), pygame.mixer.Sound("pyg/just-sans-talking.mp3"),
-      pygame.mixer.Sound("pyg/just-sans-talking.mp3"), pygame.mixer.Sound("pyg/just-sans-talking.mp3")]
+bs = pygame.mixer.Sound("bullet.mp3")
+dd = pygame.mixer.Sound("hit.mp3")
+conv = pygame.mixer.Sound("just-sans-talking.mp3")
+ll = [pygame.mixer.Sound("just-sans-talking.mp3"), pygame.mixer.Sound("just-sans-talking.mp3"),
+      pygame.mixer.Sound("just-sans-talking.mp3"), pygame.mixer.Sound("just-sans-talking.mp3"),
+      pygame.mixer.Sound("just-sans-talking.mp3"), pygame.mixer.Sound("just-sans-talking.mp3")]
 
-pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+pygame.mixer.music.load("Mus_options_fall.oga")
 
 #_ bird enemy vars
-bird_pic = pygame.image.load("pyg/bird.png")
+bird_pic = pygame.image.load("bird.png")
 
 #_ tornado vars
-tornado_pict = pygame.image.load("pyg/strom.png")
+tornado_pict = pygame.image.load("strom.png")
 tornado_x = -50
 tornado_y = 300
 tornado_hitbox = (tornado_x, tornado_y, 75, 120)
@@ -170,7 +169,7 @@ xw = -100
 yw = -100
 whitbox = (xw, yw, 50, 50)
 web = False
-web_pict = pygame.image.load("pyg/web.png")
+web_pict = pygame.image.load("web.png")
 isWeb = False
 webc = 17
 mwb = 17
@@ -302,15 +301,14 @@ spid = SpiderPlayer(x, y, wid, heg)
 enemy = Enemy(x1, yy, 50, 50)
 enemy2 = Enemy(-10000, yy, 50, 50)
 birdie = BirdEnemy(-1000, 305, 75, 60)
-flyingBoss = Boss(-1000, 100, 500, 375, pygame.image.load("pyg/boss-2-2.png"), 400)
-windyBoss = Boss(-1000, 300, 360, 320, pygame.image.load("pyg/boss-3.png"), 200)
-princeBoss = Boss(-1000, 250, 400, 400, pygame.image.load("pyg/boss-4.png"), 300)
-kingBoss = Boss(-1000, 100, 500, 500, pygame.image.load("pyg/king-2.png"), 500)
+flyingBoss = Boss(-1000, 100, 500, 375, pygame.image.load("boss-2-2.png"), 400)
+windyBoss = Boss(-1000, 300, 360, 320, pygame.image.load("boss-3.png"), 200)
+princeBoss = Boss(-1000, 250, 400, 400, pygame.image.load("boss-4.png"), 300)
+kingBoss = Boss(-1000, 100, 500, 500, pygame.image.load("king-2.png"), 500)
 bullets = []
 
 #_ clock
 clock = pygame.time.Clock()
-clock.tick(18)
 
 
 #_ blow
@@ -331,37 +329,37 @@ def catscene():
 #_ big o finale
 def final():
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("GOOD JOB!!", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
     pygame.time.wait(1000)
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("YOU MADE ME A NEW KING OF THIS WORLD!", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
     pygame.time.wait(2500)
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("I AM REALLY THANKFUL RIGHT NOW!!!", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
     pygame.time.wait(2500)
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("I THINK IT IS GOOD IDEA FOR ME TO PAY YOU )", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
     pygame.time.wait(3000)
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("IF YOU WANT, YOU CAN BE ANYONE HERE.", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
     pygame.time.wait(3000)
     screen.fill((0, 0, 0))
-    screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+    screen.blit(pygame.image.load("boss.png"), (250, 50))
     deadtext = my_font.render("SO WHO WOULD YOU LIKE TO BE?", False, (255, 255, 255))
     screen.blit(deadtext, (70, 650))
     pygame.display.update()
@@ -369,7 +367,7 @@ def final():
     curr = 1
     while True:
         screen.fill((0, 0, 0))
-        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+        screen.blit(pygame.image.load("boss.png"), (250, 50))
         if curr == 1:
             dd1 = my_font.render("I wanna go home", False, (240, 83, 101))
             screen.blit(dd1, (70, 600))
@@ -401,10 +399,10 @@ def final():
                 if evnt.key == pygame.K_z:
                     if curr == 1:
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
                         pygame.display.update()
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
                         deadtext = my_font.render("Alright)", False, (255, 255, 255))
                         screen.blit(deadtext, (70, 650))
                         pygame.display.update()
@@ -417,10 +415,10 @@ def final():
                         sys.exit()
                     if curr == 2:
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
                         pygame.display.update()
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
                         deadtext = my_font.render("Alright)", False, (255, 255, 255))
                         screen.blit(deadtext, (70, 650))
                         pygame.display.update()
@@ -428,24 +426,24 @@ def final():
                         screen.fill((0, 0, 0))
                         deadtext = my_font.render("You are prince. Good night!", False, (255, 255, 255))
                         screen.blit(deadtext, (330, 300))
-                        screen.blit(pygame.image.load("pyg/prince_end.png"), (450, 150))
+                        screen.blit(pygame.image.load("prince_end.png"), (450, 150))
                         pygame.display.update()
                         pygame.time.wait(5000)
                         sys.exit()
                     if curr == 3:
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
                         pygame.display.update()
                         screen.fill((0, 0, 0))
-                        screen.blit(pygame.image.load("pyg/boss.png"), (250, 50))
-                        deadtext = my_font.render("Seriously? Alright =)", False, (255, 255, 255))
+                        screen.blit(pygame.image.load("boss.png"), (250, 50))
+                        deadtext = my_font.render("Seriously? ...Alright =)", False, (255, 255, 255))
                         screen.blit(deadtext, (70, 650))
                         pygame.display.update()
                         pygame.time.wait(2000)
                         screen.fill((0, 0, 0))
                         deadtext = my_font.render("You are dead =). Good night!", False, (255, 255, 255))
                         screen.blit(deadtext, (330, 300))
-                        screen.blit(pygame.image.load("pyg/dead_end.png"), (450, 150))
+                        screen.blit(pygame.image.load("dead_end.png"), (450, 150))
                         pygame.display.update()
                         pygame.time.wait(5000)
                         sys.exit()
@@ -561,12 +559,12 @@ def updater():
         princeBoss.draw(screen)
         kingBoss.draw(screen)
         pygame.draw.rect(screen, (255, 0, 0), (100, ly, lw, 300))
-        screen.blit(pygame.image.load("pyg/trident.png"), (tx, ty))
-        screen.blit(pygame.image.load("pyg/wave.png"), (wx, 250))
+        screen.blit(pygame.image.load("trident.png"), (tx, ty))
+        screen.blit(pygame.image.load("wave.png"), (wx, 250))
         if rr == 2 and not solved:
-            screen.blit(pygame.image.load("pyg/maze.png"), (750, 540))
+            screen.blit(pygame.image.load("maze.png"), (750, 540))
         if rr == 3 and not solved:
-            screen.blit(pygame.image.load("pyg/maze.png"), (750, 540))
+            screen.blit(pygame.image.load("maze.png"), (750, 540))
         if wind_dir == 1:
             screen.blit(wind_pict, (wind_x, wind_y))
         elif wind_dir == 2:
@@ -593,7 +591,7 @@ def updater():
         screen.blit(deadtext, (70, 130))
         deadtext = my_font.render("GET OUT OF THIS CAVE!", False, (255, 255, 255))
         screen.blit(deadtext, (70, 170))
-        stamp = pygame.image.load("pyg/stamp.png")
+        stamp = pygame.image.load("stamp.png")
         screen.blit(stamp, (450, 300))
     elif d == 21:
         screen.fill((0, 0, 0), (0, 0, 1000, 750))
@@ -605,7 +603,7 @@ def updater():
         screen.blit(deadtext, (70, 130))
         deadtext = my_font.render("Now continue your way!", False, (255, 255, 255))
         screen.blit(deadtext, (70, 170))
-        stamp = pygame.image.load("pyg/stamp.png")
+        stamp = pygame.image.load("stamp.png")
         screen.blit(stamp, (450, 300))
     elif d == 40:
         screen.fill((0, 0, 0), (0, 0, 1000, 750))
@@ -617,7 +615,7 @@ def updater():
         screen.blit(deadtext, (70, 130))
         deadtext = my_font.render("Kill other bosses of the ELEYES", False, (255, 255, 255))
         screen.blit(deadtext, (70, 170))
-        stamp = pygame.image.load("pyg/stamp.png")
+        stamp = pygame.image.load("stamp.png")
         screen.blit(stamp, (450, 300))
     elif d == 61:
         screen.fill((0, 0, 0), (0, 0, 1000, 750))
@@ -629,7 +627,7 @@ def updater():
         screen.blit(deadtext, (70, 130))
         deadtext = my_font.render("He is your next target... Good luck!", False, (255, 255, 255))
         screen.blit(deadtext, (70, 170))
-        stamp = pygame.image.load("pyg/stamp.png")
+        stamp = pygame.image.load("stamp.png")
         screen.blit(stamp, (450, 300))
     if d == -1 and room == 1:
         dtext = my_font.render("HAHAHAHAHAHAHAHAHAH, You seriosly died))", False, (255, 0, 0))
@@ -653,18 +651,18 @@ def updater():
         dtext = my_font.render("WELL, IT IS YOUR PROBLEMS.", False, (255, 0, 0))
         screen.blit(dtext, (10, 675))
     if d == 5:
-        end = pygame.image.load("pyg/pixil-frame-0.png")
+        end = pygame.image.load("pixil-frame-0.png")
         screen.blit(end, (bx, -200))
     if d == 6:
         dtext = my_font.render("H-HOW.............................................................", False, (255, 0, 0))
         screen.blit(dtext, (10, 675))
-        deadend = pygame.image.load("pyg/pixil-frame-0 (2).png")
+        deadend = pygame.image.load("pixil-frame-0 (2).png")
         screen.blit(deadend, (bx, -200))
     if d == 10:
         dtext = my_font.render("NO-NO, Your tiny bullets won't hurt them =)", False, (185, 164, 76))
         screen.blit(dtext, (10, 675))
     if d == 11:
-        lol = pygame.image.load("pyg/bbu.png")
+        lol = pygame.image.load("bbu.png")
         screen.blit(lol, (xl, yl))
     if d == 12:
         screen.fill((0, 0, 0), (0, 0, 1000, 750))
@@ -756,7 +754,6 @@ def updater():
 pygame.mixer.music.play(-1)
 
 while True:
-
     #_ event check
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -764,11 +761,11 @@ while True:
 
     #_ room vars change
     if bb == 0 and d == 5:
-        pygame.mixer.music.load("pyg/Mus_f_intro.ogg")
+        pygame.mixer.music.load("Mus_f_intro.ogg")
         pygame.mixer.music.play(-1)
         bb += 1
     if d == 8:
-        bg = pygame.image.load("pyg/bg2.png")
+        bg = pygame.image.load("bg2.png")
         spid.y = 565
         enemy.y = 565
         enemy.vel = 3
@@ -777,15 +774,15 @@ while True:
         mjp = 12
         spid.jumpcount = mjp
         birdie.x = -10
-        pygame.mixer.music.load("pyg/Mus_anothermedium.oga")
+        pygame.mixer.music.load("Mus_anothermedium.oga")
         pygame.mixer.music.play(-1)
     if d == 22:
         spid.y = 565
         enemy.y = 565
         enemy.vel = 3
         frag = 400
-        bg = pygame.image.load("pyg/bg-3.png")
-        pygame.mixer.music.load("pyg/Mus_barrier.oga")
+        bg = pygame.image.load("bg-3.png")
+        pygame.mixer.music.load("Mus_barrier.oga")
         pygame.mixer.music.play(-1)
         d += 1
         mjp = 12
@@ -802,8 +799,8 @@ while True:
         enemy2.dir = 1
         frag = 700
         rr = 0
-        bg = pygame.image.load("pyg/bg-4.png")
-        pygame.mixer.music.load("pyg/Mus_ruins.oga")
+        bg = pygame.image.load("bg-4.png")
+        pygame.mixer.music.load("Mus_ruins.oga")
         pygame.mixer.music.play(-1)
         mjp = 12
         spid.jumpcount = mjp
@@ -823,8 +820,8 @@ while True:
         enemy.vel = 2.5
         enemy2.vel = 2.5
         frag = 1500
-        bg = pygame.image.load("pyg/bg-5-1.png")
-        pygame.mixer.music.load("pyg/Mus_chokedup.oga")
+        bg = pygame.image.load("bg-5-1.png")
+        pygame.mixer.music.load("Mus_chokedup.oga")
         pygame.mixer.music.play(-1)
         rr = 1
         mjp = 12
@@ -910,7 +907,7 @@ while True:
             pygame.time.wait(2000)
             d += 1
             boss_2 = True
-            pygame.mixer.music.load("pyg/Mus_dummybattle.oga")
+            pygame.mixer.music.load("Mus_dummybattle.oga")
             pygame.mixer.music.play(-1)
             windyBoss.x = -365
             windyBoss.pos = 2
@@ -944,7 +941,7 @@ while True:
             enemy2.x = -5000
             pygame.time.wait(2000)
             boss_3 = True
-            pygame.mixer.music.load("pyg/Mus_date_tense.oga")
+            pygame.mixer.music.load("Mus_date_tense.oga")
             pygame.mixer.music.play(-1)
             princeBoss.x = -450
             princeBoss.pos = 2
@@ -983,7 +980,7 @@ while True:
             enemy2.x = -5000
             pygame.time.wait(2000)
             boss_3 = True
-            pygame.mixer.music.load("pyg/Mus_date_tense.oga")
+            pygame.mixer.music.load("Mus_date_tense.oga")
             pygame.mixer.music.play(-1)
             princeBoss.x = -450
             princeBoss.pos = 2
@@ -998,12 +995,12 @@ while True:
         pygame.time.wait(2000)
         room = 2
         d = 7
-        pygame.mixer.music.load("pyg/Mus_amalgam.oga")
+        pygame.mixer.music.load("Mus_amalgam.oga")
         pygame.mixer.music.play(-1)
         bhp = 10
         updater()
         pygame.time.wait(10000)
-        pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+        pygame.mixer.music.load("Mus_options_fall.oga")
         pygame.mixer.music.play(-1)
         d += 1
 
@@ -1039,12 +1036,12 @@ while True:
                     flyingBoss.pos = 2
                     enemy.x = 0
                     flyingBoss.x = 1000
-                    flyingBoss.pict = pygame.image.load("pyg/boss-2.png")
+                    flyingBoss.pict = pygame.image.load("boss-2.png")
                 if flyingBoss.hp == 100:
                     flyingBoss.pos = 3
                 if flyingBoss.hp == 75:
                     flyingBoss.pos = 4
-                    flyingBoss.pict = pygame.image.load("pyg/boss-2-2.png")
+                    flyingBoss.pict = pygame.image.load("boss-2-2.png")
                 if flyingBoss.hp == 50:
                     flyingBoss.pos = 5
                 if flyingBoss.hp == 25:
@@ -1059,7 +1056,7 @@ while True:
                 princeBoss.hp -= 1
                 if princeBoss.hp == 150:
                     princeBoss.pos = 3
-                    pygame.mixer.music.load("pyg/Mus_race.oga")
+                    pygame.mixer.music.load("Mus_race.oga")
                     pygame.mixer.music.play(-1)
                 if princeBoss.hp == 10:
                     princeBoss.pos = 4
@@ -1120,7 +1117,7 @@ while True:
                     boss = True
                     flyingBoss.x = -500
                     flyingBoss.pos = 0
-                    pygame.mixer.music.load("pyg/Mus_boss1.oga")
+                    pygame.mixer.music.load("Mus_boss1.oga")
                     pygame.mixer.music.play(-1)
                 if birdie.tr <= 1:
                     d = 10
@@ -1219,10 +1216,10 @@ while True:
         birdie.dir = 0
     elif birdie.x >= birdie.path[1]:
         birdie.dir = 1
-        bird_pic = pygame.image.load("pyg/bird2.png")
+        bird_pic = pygame.image.load("bird2.png")
     elif birdie.x <= birdie.path[0]:
         birdie.dir = -1
-        bird_pic = pygame.image.load("pyg/bird.png")
+        bird_pic = pygame.image.load("bird.png")
     birdie.x += birdie.dir * birdie.vel * (-1)
 
     #_ wind move
@@ -1259,20 +1256,20 @@ while True:
         solved = False
         if type_ran <= 24:
             rr = 1
-            bg = pygame.image.load("pyg/bg-5-1.png")
+            bg = pygame.image.load("bg-5-1.png")
         elif type_ran <= 49:
             rr = 2
-            bg = pygame.image.load("pyg/bg-5-2.png")
+            bg = pygame.image.load("bg-5-2.png")
         elif type_ran <= 74:
             rr = 3
-            bg = pygame.image.load("pyg/bg-5-3.png")
+            bg = pygame.image.load("bg-5-3.png")
         elif type_ran <= 99:
             rr = 4
-            bg = pygame.image.load("pyg/bg-5-4.png")
+            bg = pygame.image.load("bg-5-4.png")
         elif type_ran == 100:
             rr = 5
-            bg = pygame.image.load("pyg/bg-5-5.png")
-            pygame.mixer.music.load("pyg/Mus_x_undyne_pre.oga")
+            bg = pygame.image.load("bg-5-5.png")
+            pygame.mixer.music.load("Mus_x_undyne_pre.oga")
             pygame.mixer.music.play(-1)
         if justS:
             enemy.y = 565
@@ -1285,7 +1282,7 @@ while True:
         rr = 6
         enemy.x = -5000
         enemy2.x = -5000
-        bg = pygame.image.load("pyg/bg-5-boss.png")
+        bg = pygame.image.load("bg-5-boss.png")
         kingBoss.x = 700
         kingBoss.pos = 2
         d = 100
@@ -1311,7 +1308,7 @@ while True:
         updater()
         pygame.time.wait(3000)
         d = 0
-        pygame.mixer.music.load("pyg/Mus_vsasgore.oga")
+        pygame.mixer.music.load("Mus_vsasgore.oga")
         pygame.mixer.music.play(-1)
     if rr == 2 and not solved:
         maze_hitbox = (750, 540, 100, 100)
@@ -1331,7 +1328,7 @@ while True:
         ys_change = 0
         foodx = round(random.randrange(0, 1000 - snake_block) / 10.0) * 10.0
         foody = round(random.randrange(0, 750 - snake_block) / 10.0) * 10.0
-        pygame.mixer.music.load("pyg/Mus_wrongworld.oga")
+        pygame.mixer.music.load("Mus_wrongworld.oga")
         pygame.mixer.music.play(-1)
         while not game_over:
             for event in pygame.event.get():
@@ -1408,7 +1405,7 @@ while True:
         xs_change = 0
         ys_change = 0
         change = False
-        pygame.mixer.music.load("pyg/Mus_wrongworld.oga")
+        pygame.mixer.music.load("Mus_wrongworld.oga")
         pygame.mixer.music.play(-1)
         while not game_over:
             for i in range(15):
@@ -1486,7 +1483,7 @@ while True:
             elif not fire:
                 ran = random.randint(1, 900)
                 fy = 0
-            atack(ran, fy, pygame.image.load("pyg/fireball.png"))
+            atack(ran, fy, pygame.image.load("fireball.png"))
         elif flyingBoss.pos == 2:
             if flyingBoss.x - flyingBoss.vel >= 800:
                 flyingBoss.x -= flyingBoss.vel
@@ -1496,7 +1493,7 @@ while True:
             elif not fire:
                 ran = random.randint(1, 900)
                 fy = 0
-            atack(ran, fy, pygame.image.load("pyg/fireball.png"))
+            atack(ran, fy, pygame.image.load("fireball.png"))
             if flyingBoss.pos == 4 and flyingBoss.x == 1000:
                 flyingBoss.x = -500
             if 0 <= flyingBoss.x <= 1000 and flyingBoss.pos == 4:
@@ -1506,7 +1503,7 @@ while True:
             if -200 <= flyingBoss.x <= 1000 and flyingBoss.pos == 5:
                 flyingBoss.x += flyingBoss.vel + 8
             if flyingBoss.x >= 1000 and flyingBoss.pos == 5:
-                flyingBoss.pict = pygame.image.load("pyg/boss-2.png")
+                flyingBoss.pict = pygame.image.load("boss-2.png")
                 flyingBoss.pos = 6
             if flyingBoss.x >= 800 and flyingBoss.pos == 6:
                 flyingBoss.x -= flyingBoss.vel
@@ -1514,12 +1511,12 @@ while True:
                 flyingBoss.x -= flyingBoss.vel + 2
             if flyingBoss.x <= -500:
                 flyingBoss.pos = 8
-                flyingBoss.pict = pygame.image.load("pyg/boss-2-2.png")
+                flyingBoss.pict = pygame.image.load("boss-2-2.png")
             if flyingBoss.x <= 1000 and flyingBoss.pos == 8:
                 flyingBoss.x += flyingBoss.vel + 2
             if flyingBoss.x >= 1000 and flyingBoss.pos == 8:
                 flyingBoss.pos = 7
-                flyingBoss.pict = pygame.image.load("pyg/boss-2.png")
+                flyingBoss.pict = pygame.image.load("boss-2.png")
         elif flyingBoss.pos == -1:
             flyingBoss.pos = -2
             flyingBoss.x = -1000
@@ -1529,12 +1526,12 @@ while True:
             updater()
             pygame.time.wait(2000)
             d += 1
-            pygame.mixer.music.load("pyg/Mus_amalgam.oga")
+            pygame.mixer.music.load("Mus_amalgam.oga")
             pygame.mixer.music.play(-1)
             updater()
             pygame.time.wait(10000)
             d += 1
-            pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+            pygame.mixer.music.load("Mus_options_fall.oga")
             pygame.mixer.music.play(-1)
 
         if touchable and pygame.Rect.colliderect(pygame.Rect(flyingBoss.hitbox), pygame.Rect(spid.hitbox)):
@@ -1598,19 +1595,19 @@ while True:
             windyBoss.x = -1000
             windyBoss.y = -1000
             if s == 0:
-                pygame.mixer.music.load("pyg/wind_boss.mp3")
+                pygame.mixer.music.load("wind_boss.mp3")
                 pygame.mixer.music.play(-1)
             s += 1
             if s >= 100:
                 catscene()
             if spid.x < -75 or spid.y < -75:
                 d = 40
-                pygame.mixer.music.load("pyg/Mus_amalgam.oga")
+                pygame.mixer.music.load("Mus_amalgam.oga")
                 pygame.mixer.music.play(-1)
                 updater()
                 pygame.time.wait(10000)
                 d += 1
-                pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+                pygame.mixer.music.load("Mus_options_fall.oga")
                 pygame.mixer.music.play(-1)
                 boss_3 = False
                 room = 4
@@ -1629,7 +1626,7 @@ while True:
             elif not fire:
                 ran = random.randint(1, 900)
                 fy = 0
-            atack(ran, fy, pygame.image.load("pyg/fireball.png"))
+            atack(ran, fy, pygame.image.load("fireball.png"))
             if not zap:
                 zap_ran = random.randint(1, 900)
                 zap = True
@@ -1714,7 +1711,7 @@ while True:
             elif not fire:
                 ran = random.randint(1, 900)
                 fy = 0
-            atack(ran, fy, pygame.image.load("pyg/fireball.png"))
+            atack(ran, fy, pygame.image.load("fireball.png"))
             ty = -1000
         elif kingBoss.pos == -1:
             kingBoss.x = -1000
@@ -1726,7 +1723,7 @@ while True:
             pygame.time.wait(2000)
             d += 1
             final()
-            pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+            pygame.mixer.music.load("Mus_options_fall.oga")
             pygame.mixer.music.play(-1)
 
         if touchable and pygame.Rect.colliderect(pygame.Rect(kingBoss.hitbox), pygame.Rect(spid.hitbox)):
@@ -1746,7 +1743,7 @@ while True:
             elif not fire:
                 ran = random.randint(1, 900)
                 fy = 0
-            atack(ran, fy, pygame.image.load("pyg/rock.png"))
+            atack(ran, fy, pygame.image.load("rock.png"))
         elif princeBoss.pos == 3:
             if touchable and pygame.Rect.colliderect(pygame.Rect(spid.hitbox), pygame.Rect((100, ly, lw, 300))):
                 d = -1
@@ -1808,12 +1805,12 @@ while True:
             updater()
             pygame.time.wait(2000)
             d += 1
-            pygame.mixer.music.load("pyg/Mus_amalgam.oga")
+            pygame.mixer.music.load("Mus_amalgam.oga")
             pygame.mixer.music.play(-1)
             updater()
             pygame.time.wait(10000)
             d += 1
-            pygame.mixer.music.load("pyg/Mus_options_fall.oga")
+            pygame.mixer.music.load("Mus_options_fall.oga")
             pygame.mixer.music.play(-1)
 
         if touchable and pygame.Rect.colliderect(pygame.Rect(princeBoss.hitbox), pygame.Rect(spid.hitbox)):
@@ -1902,3 +1899,5 @@ while True:
 
     #_ update display
     updater()
+    #_ tick
+    clock.tick(18)
